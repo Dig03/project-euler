@@ -3,7 +3,7 @@
 int fib(int n);
 
 int main() {
-	int term = 0;
+	int term;
 	int n = 1;
 	int sum = 0;
 	while (term < 4000000) {

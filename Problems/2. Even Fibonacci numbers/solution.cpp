@@ -3,14 +3,14 @@
 int fib(int n);
 
 int main() {
-	int f = 0;
+	int term = 0;
 	int n = 1;
 	int sum = 0;
-	while (f < 4000000) {
-		f = fib(n);
+	while (term < 4000000) {
+		term = fib(n);
 		n += 1;
-		if (f % 2 == 0) {
-			sum += f;
+		if (term % 2 == 0) {
+			sum += term;
 		}
 	}
 	std::cout << sum;

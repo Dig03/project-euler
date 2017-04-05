@@ -9,8 +9,11 @@ int square_sum(int n) {
 }
 
 int main() {
-    int no_sum = sum(1, 100, 1);
-    int sq_sum = square_sum(100);
-    std::cout << no_sum*no_sum - sq_sum;
+    int normal_sum = sum(1, 100, 1);
+    int square_sum = 0;
+    for (int i = 1; i < 101; i++) {
+        square_sum += i*i;
+    }
+    std::cout << normal_sum*normal_sum - square_sum;
     return 0;
 }

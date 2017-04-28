@@ -1,7 +1,10 @@
 #include <iostream>
 
 bool isprime(int n) {
-    if (n == 1 || n == 2) {
+    if (n == 1) {
+        return false;
+    }
+    if (n == 2) {
         return true;
     }
     else if (n % 2 == 0) {
